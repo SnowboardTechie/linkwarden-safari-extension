@@ -4,7 +4,21 @@
 
 (function() {
   'use strict';
-  
+
+  // Lift the upstream WholeContainer/Container overflow clipping so the
+  // injected website-access notice cannot hide the form fields and submit
+  // buttons on the options page. See issue #4. Injected as early as possible
+  // so the override is in place the moment React renders.
+  const containerFixStyle = document.createElement('style');
+  containerFixStyle.textContent = `
+    #options > div,
+    #options > div > div {
+      max-height: none !important;
+      overflow-y: visible !important;
+    }
+  `;
+  (document.head || document.documentElement).appendChild(containerFixStyle);
+
   let attemptCount = 0;
   const maxAttempts = 30; // Max 6 seconds (30 * 200ms)
   
