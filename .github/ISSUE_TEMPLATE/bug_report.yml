@@ -54,7 +54,7 @@ body:
       options:
         - TestFlight
         - Built from source
-        - Other (describe below)
+        - Other (explain in the Logs / context field below)
     validations:
       required: true
 
@@ -62,7 +62,8 @@ body:
     id: linkwarden-version
     attributes:
       label: Linkwarden version
-      placeholder: "e.g. 2.13.1"
+      description: If self-hosted, replace the default with your server's version (shown in the Linkwarden UI footer).
+      value: "cloud (linkwarden.app)"
     validations:
       required: true
 
