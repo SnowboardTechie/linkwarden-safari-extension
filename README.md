@@ -1,3 +1,15 @@
+> ## ⚠️ Archived — Unmaintained
+>
+> This project is no longer maintained. Distributing a Safari extension requires an active Apple Developer Program membership and routing every build through App Store Connect / TestFlight, and the friction isn't worth it for a project the maintainer no longer uses day-to-day.
+>
+> **Status:** Builds from source as of the last commit. No App Store or TestFlight release was ever published. No future updates are planned.
+>
+> **To use it:** clone and build from source per the instructions below. You'll need your own Apple Developer account — Safari won't load the extension without a Developer ID-signed containing app.
+>
+> **To take it over:** forks are welcome. If you actively maintain one, feel free to publicize it.
+>
+> ---
+
 # Linkwarden Safari Extension
 
 A Safari Web Extension for macOS and iOS that brings [Linkwarden](https://linkwarden.app) bookmark management to Safari. This is a community-maintained port of the [official Linkwarden browser extension](https://github.com/linkwarden/browser-extension) for Chrome and Firefox.
