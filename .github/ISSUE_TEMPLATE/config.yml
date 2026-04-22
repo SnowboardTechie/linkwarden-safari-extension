@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Linkwarden (server / app) issue
+    url: https://github.com/linkwarden/linkwarden/issues
+    about: This repo only covers the Safari extension. Issues with the Linkwarden server or web app belong upstream.
+  - name: Official browser extension (Chrome / Firefox) issue
+    url: https://github.com/linkwarden/browser-extension/issues
+    about: If the same bug reproduces in the official Chrome or Firefox extension, please file it there.

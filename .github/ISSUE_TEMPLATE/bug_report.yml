@@ -1,0 +1,83 @@
+name: Bug Report
+description: Report something that isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report! Please fill out the fields below so we can reproduce the issue.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, including what you expected to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps that let someone else hit the same bug.
+      placeholder: |
+        1. Open the extension popup
+        2. Enter API key
+        3. Click Save
+        4. See error
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS Safari
+        - iOS Safari
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: macOS / iOS version
+      placeholder: "e.g. macOS 15.6.1 or iOS 18.2"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: install-method
+    attributes:
+      label: How did you install the extension?
+      options:
+        - TestFlight
+        - Built from source
+        - Other (describe below)
+    validations:
+      required: true
+
+  - type: input
+    id: linkwarden-version
+    attributes:
+      label: Linkwarden version
+      placeholder: "e.g. 2.13.1"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: linkwarden-hosting
+    attributes:
+      label: Linkwarden hosting
+      options:
+        - Cloud (linkwarden.app)
+        - Self-hosted
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots, or other context
+      description: Paste any error messages, console output, or screenshots. Drag-and-drop images directly into this field.
